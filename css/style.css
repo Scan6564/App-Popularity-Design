@@ -1,0 +1,123 @@
+/* CSS Document */
+/* Start of reset codes */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border: none;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+/* End of reset codes */
+:root{
+	--light-steel-blue: hsl(214, 41%, 78%);
+	--mid-night-blue: hsl(240, 64%, 27%);
+	--cadet-blue: hsl(186, 100%, 35%);
+	--deep-sky-blue: hsl(195, 100%, 50%);
+	--white: hsl(0, 0%, 100%);
+}
+body{
+	font-family: 'Open Sans', sans-serif; /* Weight 400, 700 */
+	font-size: 16px;
+}
+.container{
+	position: relative;
+	top: 150px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 1000px;
+	background-color: var(--light-steel-blue);
+	padding: 30px 20px;
+	margin: 0 auto;
+	border-radius: 15px;
+}
+.container .explanation{
+	flex-basis: 330px;
+}
+.container .explanation h2{
+	font-size: 2.5em;
+	color: var(--mid-night-blue);
+	margin-bottom: 10px;
+}
+.container .explanation p{
+	font-size: 0.9em;
+	color: var(--mid-night-blue);
+	line-height: 1.5;
+	max-width: 42ch;
+}
+.container .rated{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	flex-basis: 395px;
+}
+.container .rated-box{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 85%;
+	background-color: var(--cadet-blue);
+	padding: 15px 0;
+	border-radius: 10px;
+}
+.container .rated .rated-box:nth-child(2){
+	margin-left: 20px;
+}
+.container .rated .rated-box:nth-child(3){
+	margin-left: 40px;
+}
+.container .rated-box img{
+	width: 80px;
+	margin-right: 20px;
+}
+.container .rated-box p{
+	font-size: 0.9em;
+	color: var(--mid-night-blue);
+	font-weight: 700;
+}
+.container .comment{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-basis: 100%;
+	margin-top: 60px;
+}
+.container .comment .comment-box{
+	flex-basis: 30%;
+	background-color: var(--mid-night-blue);
+	padding: 20px 20px;
+	border-radius: 10px;
+}
+.container .comment .comment-box:nth-child(2){
+	margin-top: 15px;
+}
+.container .comment .comment-box:nth-child(3){
+	margin-top: 30px;
+}
+.container .comment .user{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.container .comment .comment-box .user img{
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin-right: 20px;
+}
+.container .comment .comment-box .user img+p{
+	font-size: 0.9em;
+	font-weight: 700;
+	color: var(--white);
+}
+.container .comment .comment-box .user span{
+	font-size: 0.9em;
+	font-weight: 700;
+	color: var(--deep-sky-blue);
+}
+.container .comment .comment-box p{
+	font-size: 0.9em;
+	color: var(--white);
+}
